@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/svg">
+        <file>1.svg</file>
+        <file>2.svg</file>
+        <file>3.svg</file>
+        <file>icon.ico</file>
+        <file>b0.svg</file>
+        <file>b1.svg</file>
+        <file>b2.svg</file>
+        <file>b3.svg</file>
+        <file>b4.svg</file>
+        <file>b5.svg</file>
+        <file>b6.svg</file>
+        <file>b7.svg</file>
+        <file>b8.svg</file>
+        <file>b9.svg</file>
+        <file>b10.svg</file>
+        <file>b11.svg</file>
+        <file>b12.svg</file>
+        <file>b13.svg</file>
+        <file>b14.svg</file>
+        <file>b15.svg</file>
+    </qresource>
+</RCC>
