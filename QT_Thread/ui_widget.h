@@ -27,6 +27,7 @@ class Ui_Widget
 public:
     QGridLayout *gridLayout;
     QPushButton *pushButton;
+    QPushButton *pushButton2;
     QLineEdit *lineEdit;
     QLabel *label;
     QThread *thread;// 用于新建线程
@@ -60,6 +61,27 @@ public:
 
         gridLayout->addWidget(pushButton, 1, 0, 1, 1);
 
+
+        pushButton2 = new QPushButton(Widget);
+        pushButton2->setObjectName(QString::fromUtf8("pushButton"));
+
+        pushButton2->setFont(font);
+
+
+        QObject::connect(pushButton2,&QPushButton::clicked,[=]{
+
+            thread->quit();
+
+        });
+
+
+        gridLayout->addWidget(pushButton2, 3, 0, 1, 1);
+
+
+
+
+
+
         lineEdit = new QLineEdit(Widget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setFont(font);
@@ -85,7 +107,8 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "PushButton", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "开启线程并计时", nullptr));
+        pushButton2->setText(QCoreApplication::translate("Widget", "关闭线程", nullptr));
         lineEdit->setText(QString());
         label->setText(QString());
     } // retranslateUi
