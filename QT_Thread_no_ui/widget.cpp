@@ -12,6 +12,7 @@ Widget::Widget(QWidget *parent)
 #ifndef SingleThread
     this->thread = new QThread;
     this->obj->moveToThread(thread);
+    this->thread->start();
 #endif
     // 输出当前UI的线程
     qDebug()<<QThread::currentThreadId();
