@@ -2,6 +2,7 @@
 
 Thread_obj::Thread_obj()
 {
+    this->timer=nullptr;
 }
 
 
