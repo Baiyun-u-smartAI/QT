@@ -10,6 +10,7 @@ Widget::Widget(QWidget *parent)
     QGridLayout* grid = new QGridLayout(this);
     this->setLayout(grid);
     showL = new QLabel(this);
+    showL->setText("qefklewhlifrhjewl: 0");
     grid->addWidget(showL, 0, 0);
 
     for (auto& i : btns){
@@ -34,5 +35,8 @@ Widget::~Widget()
 
 void Widget::changeShow(QString data)
 {
-    this->showL->setText(data);
+    int newLen = this->showL->text().indexOf(":");
+    QString newText = this->showL->text();
+    newText.resize(newLen);
+    this->showL->setText(newText + ": " + data);
 }
