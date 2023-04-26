@@ -1,0 +1,60 @@
+{
+        "app-name": "✶✷✸✹温控系统",
+	"size": [860, 640],
+	"style": "font-size: 60px",
+        "label-style": "color: white",
+	"title": [
+		{
+			"geometry":  [10, 10, 840, 62],
+			"text": "Temperature Control System"
+		},
+		{
+			"geometry":  [10, 88, 840, 62],
+			"text": "Mode: OFF"
+		},
+		{
+			"geometry":  [10, 168, 840, 62],
+			"text": "Temperature: 25"
+		}
+	],
+	"gif": {
+		"geometry":  [10, 240, 840, 120],
+		"url": ":/wallpaper/ezgif.com-gif-maker.gif"
+	},
+	"button":[
+                {
+                    "power": {
+                            "geometry":  [10, 360, 840, 62],
+                            "text": "On/Off"
+                    }
+                },
+                {
+                    "mode": [
+			{
+				"geometry":  [10, 432, 270, 62],
+				"text": "Air-blow"
+			},
+			{
+				"geometry":  [295, 432, 270, 62],
+				"text": "Heat"
+			},
+			{
+				"geometry":  [580, 432, 270, 62],
+				"text": "Cool"
+			}
+                    ]
+                },
+                {
+                    "tControl": [
+			{
+				"geometry":  [10, 544, 415, 62],
+				"text": "+"
+			},
+			{
+				"geometry":  [435, 544, 415, 62],
+				"text": "-"
+			}
+                    ]
+                }
+	]
+}

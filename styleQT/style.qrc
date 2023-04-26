@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/button">
+        <file>button.qss</file>
+    </qresource>
+    <qresource prefix="/wallpaper">
+        <file>ai2023_geometric_border_with_background_dark_and_blue_abstract__e668a276-c42e-404d-8d42-cf12bf94cf86.png</file>
+        <file>ezgif.com-gif-maker.gif</file>
+        <file>pngegg.png</file>
+    </qresource>
+    <qresource prefix="/var">
+        <file>var.json</file>
+    </qresource>
+</RCC>

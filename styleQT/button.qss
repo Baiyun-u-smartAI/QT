@@ -1,0 +1,20 @@
+MyButton{
+    color: lightblue;
+    background-color: rgb(50, 50, 50);
+
+}
+
+MyButton:hover{
+    color: yellow;
+    background-color: rgba(120, 120, 120, 30%);
+}
+
+MyButton:pressed{
+    color: rgb(0, 0, 80);
+    background-color: rgb(200, 200, 80);
+}
+
+MyButton:disabled{
+    icon: url(:/wallpaper/pngegg.png);
+}
+
